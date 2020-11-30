@@ -1,3 +1,24 @@
 // -----------------------------------------------------------------------------
 // This file contains styles that are specific to the home page.
 // -----------------------------------------------------------------------------
+main{
+    background-color: $light-grey;
+
+    h1, p, figure, #img_caption{
+        text-align: center;
+    }
+    figure{
+        #image{
+            @media(min-width: 768px){
+                @include addBorder(3px, $brand-color);
+            }
+        }
+    }
+
+    #tribute-info{
+        h3{
+            text-align: center;
+        }
+    }
+}
+
